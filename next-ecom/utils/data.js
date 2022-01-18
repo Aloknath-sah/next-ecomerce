@@ -1,0 +1,61 @@
+const data = {
+    products: [
+        {
+            name: 'Imported Shirt',
+            category: 'Shirt',
+            image: '/images/shirt1.jpg',
+            price: 170,
+            brand: 'Nike',
+            rating: 4.5,
+            numReviews: 10,
+            countInStock: 20,
+            description: 'A popular shirt',
+        },
+        {
+            name: 'pink Shirt',
+            category: 'Shirt',
+            image: '/images/shirt2.jpg',
+            price: 190,
+            brand: 'Adidas',
+            rating: 4.8,
+            numReviews: 10,
+            countInStock: 20,
+            description: 'A popular shirt',
+        },
+        {
+            name: 'handmade Shirt',
+            category: 'Shirt',
+            image: '/images/shirt3.jpg',
+            price: 120,
+            brand: 'joy',
+            rating: 4.1,
+            numReviews: 10,
+            countInStock: 20,
+            description: 'A popular shirt',
+        },
+        {
+            name: 'strechable pant',
+            category: 'pant',
+            image: '/images/pants1.jpg',
+            price: 100,
+            brand: 'mufti',
+            rating: 4.4,
+            numReviews: 10,
+            countInStock: 20,
+            description: 'A popular Pant',
+        },
+        {
+            name: 'fit pant',
+            category: 'pant',
+            image: '/images/pants2.jpg',
+            price: 160,
+            brand: 'zara',
+            rating: 4.7,
+            numReviews: 10,
+            countInStock: 20,
+            description: 'A popular Pant',
+        },
+    ]
+}
+
+export default data;
