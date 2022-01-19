@@ -2,6 +2,7 @@ const data = {
     products: [
         {
             name: 'Imported Shirt',
+            slug: 'Imported-Shirt',
             category: 'Shirt',
             image: '/images/shirt1.jpg',
             price: 170,
@@ -13,6 +14,7 @@ const data = {
         },
         {
             name: 'pink Shirt',
+            slug: 'pink-Shirt',
             category: 'Shirt',
             image: '/images/shirt2.jpg',
             price: 190,
@@ -24,6 +26,7 @@ const data = {
         },
         {
             name: 'handmade Shirt',
+            slug: 'handmade-Shirt',
             category: 'Shirt',
             image: '/images/shirt3.jpg',
             price: 120,
@@ -35,6 +38,7 @@ const data = {
         },
         {
             name: 'strechable pant',
+            slug: 'strechable-pant',
             category: 'pant',
             image: '/images/pants1.jpg',
             price: 100,
@@ -46,6 +50,7 @@ const data = {
         },
         {
             name: 'fit pant',
+            slug: 'fit-pant',
             category: 'pant',
             image: '/images/pants2.jpg',
             price: 160,
