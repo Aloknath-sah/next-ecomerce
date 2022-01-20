@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Head from 'next/head';
 import NextLink from 'next/link';
-import { AppBar,Toolbar, Typography, Container, Link } from '@material-ui/core';
+import { AppBar,Toolbar, Typography, Container, Link, Badge } from '@material-ui/core';
 import useStyles from '../utils/styles';
+import { Store } from '../utils/Store';
 
 export const Layout = ({title, description, children}) => {
+    const { state } = useContext(Store);
+    const { cart } = state;
     const classes = useStyles();
     return (
         <div>
@@ -22,7 +25,19 @@ export const Layout = ({title, description, children}) => {
                     <div className={classes.grow}></div>
                     <div>
                         <NextLink href="/cart" passHref>
-                            <Link>Cart</Link>
+                            
+                            <Link>
+                                {cart.cartItems.length > 0 ? (
+                                    <Badge
+                                    color="secondary"
+                                    badgeContent={cart.cartItems.length}
+                                    >
+                                    Cart
+                                    </Badge>
+                                ) : (
+                                    'Cart'
+                                )}
+                            </Link>
                         </NextLink>
                         <NextLink href="/login" passHref>
                             <Link>Login</Link>
